@@ -184,11 +184,11 @@ a img {
 
 /* Hank Style */
 .left {
-	flex:3;
+	flex:4.5;
 	background: #000;
 }
 
 .right {
-	flex:7;
+	flex:5.5;
 	background: #000;
 }
