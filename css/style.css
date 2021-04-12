@@ -71,7 +71,7 @@
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
-	background-position: center center;
+	background-position: right;
 	background-repeat: no-repeat;
 	background-color: #333;
 	-webkit-box-sizing: content-box;
@@ -159,14 +159,14 @@
 	margin: 0px;
 	position: relative;
 	width: 100%;
-	height: 100%;
+	height: 100vh;
 }
 
 .ri-single ul {
 	list-style: none;
 	display: block;
 	width: 100%;
-	height: 100%;
+	height: 100vh;
 	margin: 0;
 	padding: 0;
 }
@@ -182,6 +182,10 @@
 .ri-single ul:after {
 	clear: both;
 }
+
+.ri-single ul {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+} 
 
 .ri-single ul li {
 	-webkit-perspective: 400px;
@@ -218,14 +222,13 @@
 	-o-transform-style: preserve-3d;
 	-ms-transform-style: preserve-3d;
 	transform-style: preserve-3d;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	background-size: cover;
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	background-size: contain;
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-color: #333;
 	-webkit-box-sizing: content-box;
 	-moz-box-sizing: content-box;
 	box-sizing: content-box;
-	align-self: center;
 }
